@@ -3,7 +3,7 @@ alias g='git'
 compdef g=git
 alias gst='git status'
 compdef _git gst=git-status
-alias gl='git pull'
+alias gll='git pull'
 compdef _git gl=git-pull
 alias gup='git fetch && git rebase'
 compdef _git gup=git-fetch
@@ -38,6 +38,7 @@ alias gm='git merge'
 compdef _git gm=git-merge
 alias grh='git reset HEAD'
 alias grhh='git reset HEAD --hard'
+alias gl='git l'
 
 # Git and svn mix
 alias git-svn-dcommit-push='git svn dcommit && git push github master:svntrunk'
