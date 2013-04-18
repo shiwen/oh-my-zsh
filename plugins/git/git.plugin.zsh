@@ -14,10 +14,17 @@ gdv() { git diff -w "$@" | view - }
 compdef _git gdv=git-diff
 alias gc='git commit -v'
 compdef _git gc=git-commit
+alias gc!='git commit -v --amend'
+compdef _git gc!=git-commit
 alias gca='git commit -v -a'
 compdef _git gca=git-commit
 alias go='git checkout'
 compdef _git go=git-checkout
+compdef _git gc=git-commit
+alias gca!='git commit -v -a --amend'
+compdef _git gca!=git-commit
+alias gco='git checkout'
+compdef _git gco=git-checkout
 alias gcm='git checkout master'
 alias gr='git remote'
 compdef _git gr=git-remote
